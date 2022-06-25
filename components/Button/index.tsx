@@ -20,13 +20,18 @@ interface ButtonProps {
 const Button: FC<ButtonProps> = ({ color, size, classname, children }) => {
   const colorClass =
     color === ButtonColor.WHITE
-      ? "bg-white text-black"
-      : "bg-notQuiteBlack text-white";
+      ? "bg-white text-black hover:text-lightBrand"
+      : "bg-notQuiteBlack text-white hover:bg-lightGrey";
 
-  const sizeClass = size === ButtonSize.BIG ? "text-lg" : "text-sm";
+  const sizeClass =
+    size === ButtonSize.BIG
+      ? "text-lg px-8 py-4 font-medium"
+      : "text-xs px-5 scale-y-110 py-2";
 
   return (
-    <div className={`rounded-xl p-2 ${colorClass} ${sizeClass} ${classname}`}>
+    <div
+      className={`flex items-center hover:shadow-2xl transition-all cursor-pointer rounded-full font-dm-sans mx-3 ${colorClass} ${sizeClass} ${classname}`}
+    >
       {children}
     </div>
   );

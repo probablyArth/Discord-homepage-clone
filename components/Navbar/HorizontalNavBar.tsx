@@ -4,7 +4,7 @@ import Button, { ButtonColor, ButtonSize } from "../Button";
 
 const HorizontalNavBar = () => {
   return (
-    <div className="flex items-center w-2/3 justify-center">
+    <div className="flex items-center w-3/5 justify-between">
       <Logo type={LogoTypes.WHITE} />
       <div className="flex justify-between">
         <Link>Download</Link>
