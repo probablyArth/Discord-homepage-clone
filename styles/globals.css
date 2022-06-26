@@ -57,3 +57,11 @@ a {
   transform: translateY(0);
   opacity: 1;
 }
+
+.stars {
+  background-image: url("/images/stars.svg");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background */
+}

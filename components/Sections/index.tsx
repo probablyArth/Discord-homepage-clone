@@ -1,4 +1,6 @@
 import React, { FC } from "react";
+import Button, { ButtonColor, ButtonSize } from "../Button";
+import { Download } from "../Icons";
 import Section, { SectionColor, SectionTypes } from "../Section";
 
 const Sections: FC = () => {
@@ -40,6 +42,15 @@ const Sections: FC = () => {
         }
         type={SectionTypes.CENTER}
       />
+      <div className="bg-offWhite w-full flex flex-col justify-center items-center py-28">
+        <h1 className="text-notQuiteBlack text-3xl font-bold py-10 px-12 stars">
+          Ready to start your journey?
+        </h1>
+        <Button size={ButtonSize.BIG} color={ButtonColor.BLUE}>
+          <Download />
+          <span className="pl-2">Download For Windows</span>
+        </Button>
+      </div>
     </div>
   );
 };

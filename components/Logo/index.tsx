@@ -20,7 +20,7 @@ const Logo: FC<LogoProps> = ({ classname, type }) => {
       }
       width={124}
       height={24}
-      className={classname}
+      className={`cursor-pointer ${classname}`}
     />
   );
 };

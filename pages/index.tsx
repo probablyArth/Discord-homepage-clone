@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import NavBar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Sections from "../components/Sections";
+import Footer from "../components/Footer";
 
 export const reveal = () => {
   var reveals = document.querySelectorAll(".scroll");
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
           <Hero />
         </div>
         <Sections />
+        <Footer />
       </div>
     </>
   );

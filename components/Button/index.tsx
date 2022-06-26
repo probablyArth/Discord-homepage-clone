@@ -8,6 +8,7 @@ export enum ButtonSize {
 export enum ButtonColor {
   WHITE,
   BLACK,
+  BLUE,
 }
 
 interface ButtonProps {
@@ -18,10 +19,14 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ color, size, classname, children }) => {
-  const colorClass =
+  var colorClass =
     color === ButtonColor.WHITE
       ? "bg-white text-black hover:text-lightBrand"
       : "bg-notQuiteBlack text-white hover:bg-lightGrey";
+
+  if (color === ButtonColor.BLUE) {
+    colorClass = "bg-lightBrand text-white hover:bg-lighterBrand";
+  }
 
   const sizeClass =
     size === ButtonSize.BIG
@@ -30,7 +35,7 @@ const Button: FC<ButtonProps> = ({ color, size, classname, children }) => {
 
   return (
     <div
-      className={`flex items-center hover:shadow-2xl transition-all cursor-pointer rounded-full font-dm-sans mx-3 ${colorClass} ${sizeClass} ${classname}`}
+      className={`flex items-center hover:shadow-2xl transition-all duration-300 cursor-pointer rounded-full font-dm-sans mx-3 ${colorClass} ${sizeClass} ${classname}`}
     >
       {children}
     </div>
