@@ -4,7 +4,7 @@ import { Download } from "../Icons";
 
 const Hero = () => {
   return (
-    <div className="pt-[4.3rem] pb-36  flex flex-col justify-center items-center hero">
+    <div className="pt-[4.3rem] pb-36  flex flex-col justify-center items-center hero HERO relative overflow-y-hidden overflow-x-hidden">
       <h1 className="font-extrabold text-white text-[5rem] scale-y-75 leading-5 tracking-[-4px] word-spacing-2 pt-24">
         IMAGINE A PLACE ...
       </h1>
@@ -28,14 +28,14 @@ const Hero = () => {
         src={"/images/heroLeft.svg"}
         width="689"
         height={"352"}
-        className={"absolute left-[50%] ml-[-1030px] top-[274px]"}
+        className={"absolute left-[50%] ml-[-1030px] top-[218px]"}
         alt={"chill fish"}
       />
       <img
         src={"/images/heroRight.svg"}
         width="615"
         height={"360"}
-        className={"absolute right-[50%] mr-[-1030px] top-[266px]"}
+        className={"absolute right-[50%] mr-[-1030px] top-[210px]"}
         alt={"chill fish"}
       />
     </div>
