@@ -18,27 +18,27 @@ const Sections: FC = () => {
       <Section
         color={SectionColor.OFF_WHITE}
         img={"images/section2.svg"}
-        head={"Create an invite-only place where you belong"}
+        head={"Where hanging out is easy"}
         desc={
-          "Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat."
+          "Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call."
         }
         type={SectionTypes.RIGHT}
       />
       <Section
         color={SectionColor.WHITE}
         img={"images/section3.svg"}
-        head={"Create an invite-only place where you belong"}
+        head={"From few to a fandom"}
         desc={
-          "Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat."
+          "Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more."
         }
         type={SectionTypes.LEFT}
       />
       <Section
         color={SectionColor.OFF_WHITE}
         img={"images/section4.svg"}
-        head={"Create an invite-only place where you belong"}
+        head={"RELIABLE TECH FOR STAYING CLOSE"}
         desc={
-          "Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat."
+          "Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share."
         }
         type={SectionTypes.CENTER}
       />

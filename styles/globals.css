@@ -40,6 +40,10 @@ a {
   word-spacing: -10px;
 }
 
+.word-spacing-1 {
+  word-spacing: 9px;
+}
+
 .BGIMG {
   background: url("/images/bg.svg"), #404eed;
   background-size: 2580px;
