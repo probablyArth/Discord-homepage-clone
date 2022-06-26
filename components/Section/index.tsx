@@ -39,7 +39,7 @@ const Section: FC<SectionProps> = ({ type, img, head, desc, color }) => {
       <div
         className={`flex flex-col ${
           type === SectionTypes.CENTER
-            ? "pt-32 pb-0 px-32 text-center w-4/5"
+            ? "pt-32 pb-0 px-32 text-center w-full max-w-4/5"
             : "p-32"
         }`}
       >

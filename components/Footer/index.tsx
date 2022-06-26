@@ -14,8 +14,8 @@ import Button, { ButtonColor, ButtonSize } from "../Button";
 const Footer = () => {
   return (
     <footer className="bg-notQuiteBlack flex flex-col items-center">
-      <div className="grid grid-cols-6 w-2/3 py-16">
-        <div className="col-span-2">
+      <div className="grid lg:grid-cols-6 lg:grid-rows-none w-2/3 py-16 grid-cols-4 grid-rows-2">
+        <div className="col-span-2 row-span-2">
           <h1 className="font-extrabold text-lightBrand text-[2.5rem] scale-y-75 leading-10">
             IMAGINE A <br />
             PLACE

@@ -3,6 +3,7 @@ import NavBar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Sections from "../components/Sections";
 import Footer from "../components/Footer";
+import { MediaContextProvider } from "../utils/MediaQueriesProvider";
 
 export const reveal = () => {
   var reveals = document.querySelectorAll(".scroll");
@@ -24,16 +25,14 @@ if (typeof window !== "undefined") {
 
 const Home: NextPage = () => {
   return (
-    <>
-      <div>
-        <div className="BGIMG">
-          <NavBar />
-          <Hero />
-        </div>
-        <Sections />
-        <Footer />
+    <MediaContextProvider>
+      <div className="BGIMG">
+        <NavBar />
+        <Hero />
       </div>
-    </>
+      <Sections />
+      <Footer />
+    </MediaContextProvider>
   );
 };
 
