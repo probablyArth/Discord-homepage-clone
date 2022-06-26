@@ -31,7 +31,7 @@ const Button: FC<ButtonProps> = ({ color, size, classname, children }) => {
   const sizeClass =
     size === ButtonSize.BIG
       ? "text-lg px-8 py-4 font-medium"
-      : "text-xs px-5 scale-y-110 py-2";
+      : "text-xs px-5 scale-y-110 py-2 font-medium";
 
   return (
     <div
