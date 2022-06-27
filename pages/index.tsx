@@ -25,6 +25,7 @@ if (typeof window !== "undefined") {
 
 const Home: NextPage = () => {
   return (
+    // @ts-ignore
     <MediaContextProvider>
       <div className="BGIMG">
         <NavBar />
