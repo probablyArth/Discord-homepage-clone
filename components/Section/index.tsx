@@ -23,9 +23,9 @@ const Section: FC<SectionProps> = ({ type, img, head, desc, color }) => {
   var direction = "";
   var text = "";
   if (type === SectionTypes.RIGHT) {
-    direction = "flex-row-reverse";
+    direction = "md:flex-row-reverse";
   } else if (type === SectionTypes.CENTER) {
-    direction = "flex-col flex-col-reverse py-0";
+    direction = "md:flex-col md:flex-col-reverse md:py-0";
     text = "font-black text-[3rem] scale-y-75 tracking-tighter word-spacing-1 ";
   }
 
@@ -33,20 +33,24 @@ const Section: FC<SectionProps> = ({ type, img, head, desc, color }) => {
 
   return (
     <section
-      className={`scroll flex px-72 justify-center items-center ${direction} ${bgColor}`}
+      className={`scroll py-8 md:py-0 flex md:px-72 justify-center items-center  flex-col md:flex-row ${direction} ${bgColor}`}
     >
       <img src={img} />
       <div
         className={`flex flex-col ${
           type === SectionTypes.CENTER
-            ? "pt-32 pb-0 px-32 text-center w-full max-w-4/5"
-            : "p-32"
+            ? "md:pt-32 pb-0 md:px-32 text-center w-full max-w-4/5"
+            : "md:p-32 p-8"
         }`}
       >
-        <h1 className={`text-notQuiteBlack font-bold text-5xl ${text}`}>
+        <h1
+          className={`text-notQuiteBlack font-bold text-xl md:text-5xl ${text} py-4`}
+        >
           {head}
         </h1>
-        <p className="text-notQuiteBlack text-lg py-14">{desc}</p>
+        <div className="text-notQuiteBlack text-md md:text-lg md:py-14">
+          {desc}
+        </div>
       </div>
     </section>
   );

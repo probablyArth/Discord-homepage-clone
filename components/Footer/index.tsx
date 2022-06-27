@@ -14,8 +14,8 @@ import Button, { ButtonColor, ButtonSize } from "../Button";
 const Footer = () => {
   return (
     <footer className="bg-notQuiteBlack flex flex-col items-center">
-      <div className="grid lg:grid-cols-6 lg:grid-rows-none w-2/3 py-16 grid-cols-4 grid-rows-2">
-        <div className="col-span-2 row-span-2">
+      <div className="grid lg:grid-cols-6 lg:grid-rows-none w-2/3 py-16 md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-3">
+        <div className="col-span-2 md:row-span-2">
           <h1 className="font-extrabold text-lightBrand text-[2.5rem] scale-y-75 leading-10">
             IMAGINE A <br />
             PLACE
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="flex items-center py-5">
             <USA /> <h1 className="text-white px-2 text-sm">English, USA</h1>
           </div>
-          <div className="flex justify-between w-1/3">
+          <div className="flex justify-between md:w-1/3 w-2/3">
             <AiOutlineTwitter className="text-white cursor-pointer" size={24} />
             <AiOutlineInstagram
               className="text-white cursor-pointer"
