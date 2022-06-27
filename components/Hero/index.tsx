@@ -5,7 +5,6 @@ import { useMediaQuery } from "../../utils/MediaQueriesProvider";
 
 const Hero = () => {
   const isSmall = useMediaQuery("(max-width: 640px)");
-  const isInRange = useMediaQuery("(min-width:641px) and (max-width:1024px)");
   const isBelow1024 = useMediaQuery("(min-width:1024px)");
 
   return (

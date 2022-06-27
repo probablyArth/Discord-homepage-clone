@@ -10,7 +10,6 @@ const HorizontalNavBar = () => {
   return (
     <div className="flex items-center max-w-7xl w-full justify-between">
       <Logo type={LogoTypes.WHITE} />
-      {/* <Media greaterThanOrEqual="lg"> */}
       {isBelow1024 && (
         <div className="flex justify-between">
           <Link>Download</Link>
@@ -25,8 +24,7 @@ const HorizontalNavBar = () => {
         <Button color={ButtonColor.WHITE} size={ButtonSize.SMALL}>
           Login
         </Button>
-        {/* <Media lessThan="lg"> */}
-        <AiOutlineMenu className="text-white" size={25} />
+        <AiOutlineMenu className="block lg:hidden text-white" size={25} />
       </div>
     </div>
   );
